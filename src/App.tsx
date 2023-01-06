@@ -14,7 +14,6 @@ function App() {
         formData.append("file", fileValue)
 
         Repository.calculate(formData).then(r => {
-            console.log('r', r)
             setLine(r.data.line)
             setMinimum(r.data.minimum)
             setIsSuccess(true)
